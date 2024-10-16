@@ -3,16 +3,6 @@ def nu_version []: nothing -> int {
   (($nv.0 | into int) * 10000) + ($nv.1 | into int)
 }
 
-export def _ps [--long(-l)]: nothing -> table {
-  # nu0.97: Prefer process name over executable path
-  if (nu_version) > 96 {
-    let psl = (ps --long | update name {|i| $i.command})
-    if $long { $psl } else { $psl | select pid ppid name status cpu mem virtual }
-  } else {
-    if $long { ps --long } else { ps }
-  }
-}
-
 export def _into_record []: any -> record {
   # nu0.98: the previous behavior for list inputs has been removed (the index of each item would be used as the key)
   let input = ($in)
