@@ -49,8 +49,6 @@ Manually copying the files in might work at first, but you will have to constant
 ### Unfixed things
 
 * anything polars
-* broken by nu0.99: add quotes to strings within assignments (`let`, `mut`, `$foo =`) (`const foo = bar` -> `const foo = "bar"`)
-* broken by nu0.99: tee is somehow diffrent
 
 
 ### Available versions
