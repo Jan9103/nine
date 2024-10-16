@@ -48,6 +48,13 @@ Manually copying the files in might work at first, but you will have to constant
 old nu-version | up to nu | coverage (estimate of broken scripts fixed by nine)
 -------------- | -------- | ---------------------------------------------------
 `nu0.95`       | `0.96`   | 80%
+`nu0.95`       | `0.97`   | 70%
+
+
+## Unfixed things
+
+* broken by nu0.96: do not use `continue` within `each`
+* broken by nu0.97: add quotes to strings within assignments (`let`, `mut`, `$foo =`) (`const foo = bar` -> `const foo = "bar"`)
 
 
 

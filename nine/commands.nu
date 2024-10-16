@@ -135,3 +135,13 @@ export def _from_ssv [
   }
   $res
 }
+
+export def _ps [--long(-l)]: nothing -> table {
+  # nu0.97: Prefer process name over executable path
+  if (nu_version) > 96 {
+    let psl = (ps --long | update name {|i| $i.command})
+    if $long { $psl } else { $psl | select pid ppid name status cpu mem virtual }
+  } else {
+    if $long { ps --long } else { ps }
+  }
+}

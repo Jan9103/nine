@@ -7,3 +7,4 @@ export alias select = _select
 export alias "from csv" = _from_csv
 export alias "from tsv" = _from_tsv
 export alias "from ssv" = _from_ssv
+export alias ps = _ps
