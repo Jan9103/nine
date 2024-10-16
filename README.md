@@ -16,7 +16,7 @@ Add the following linkin to your projects `numng.json`:
 ```json
 {
   "linkin": {
-    "nulibs/nine": {"name": "jan9103/nine", "version": "~0.95"}
+    "nulibs/nine": {"name": "jan9103/nine", "version": "~0.96"}
   },
   "registry": [
     {"source_uri": "https://github.com/Jan9103/numng_repo", "package_format": "numng", "path_offset": "repo"}
@@ -24,7 +24,7 @@ Add the following linkin to your projects `numng.json`:
 }
 ```
 
-And replace `0.95` with the **oldest** nushell version you want to support (example: `0.95`)
+And replace `0.96` with the **oldest** nushell version you want to support (example: `0.96`)
 
 Afterwards `use` it at the top of each script of your project using relative paths from the script to nine (example: `use ../nulibs/nine *`)
 
@@ -49,7 +49,6 @@ Manually copying the files in might work at first, but you will have to constant
 ### Unfixed things
 
 * anything polars
-* broken by nu0.96: do not use `continue` within `each`
 * broken by nu0.97: add quotes to strings within assignments (`let`, `mut`, `$foo =`) (`const foo = bar` -> `const foo = "bar"`)
 * broken by nu0.98: tee is somehow diffrent
 
