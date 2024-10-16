@@ -16,7 +16,7 @@ Add the following linkin to your projects `numng.json`:
 ```json
 {
   "linkin": {
-    "nulibs/nine": {"name": "jan9103/nine", "version": "~0.97"}
+    "nulibs/nine": {"name": "jan9103/nine", "version": "~0.98"}
   },
   "registry": [
     {"source_uri": "https://github.com/Jan9103/numng_repo", "package_format": "numng", "path_offset": "repo"}
@@ -24,7 +24,7 @@ Add the following linkin to your projects `numng.json`:
 }
 ```
 
-And replace `0.97` with the **oldest** nushell version you want to support
+And replace `0.98` with the **oldest** nushell version you want to support
 
 Afterwards `use` it at the top of each script of your project using relative paths from the script to nine (example: `use ../nulibs/nine *`)
 
@@ -40,8 +40,8 @@ Manually copying the files in might work at first, but you will have to constant
 
 ### General things
 
-* some things are impossible to emulate using a library (example: since `0.97` `continue` no longer works within `each`)
-* sometimes it isn't worth the work since noone (shouldve) used the old feature (example: since `0.97` `"foo"bar` is no longer a valid string)
+* some things are impossible to emulate using a library (example: since `0.98` `continue` no longer works within `each`)
+* sometimes it isn't worth the work since noone (shouldve) used the old feature (example: since `0.98` `"foo"bar` is no longer a valid string)
 * overriding other libraries (including `std`) is not reliable
 * i wont keep supporting versions forever. depending on the changes the support-duration might vary.
 
@@ -49,7 +49,7 @@ Manually copying the files in might work at first, but you will have to constant
 ### Unfixed things
 
 * anything polars
-* broken by nu0.97: add quotes to strings within assignments (`let`, `mut`, `$foo =`) (`const foo = bar` -> `const foo = "bar"`)
+* broken by nu0.98: add quotes to strings within assignments (`let`, `mut`, `$foo =`) (`const foo = bar` -> `const foo = "bar"`)
 * broken by nu0.98: tee is somehow diffrent
 
 
@@ -60,6 +60,7 @@ from | up to
 `nu0.95` | `0.99`
 `nu0.96` | `0.99`
 `nu0.97` | `0.99`
+`nu0.98` | `0.99`
 
 
 ## FAQ
