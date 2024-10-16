@@ -14,12 +14,17 @@ A forward-compatability library for [nu][].
 Add the following linkin to your projects `numng.json`:
 
 ```json
-"linkin": {
-  "nulibs/nine": {"name": "nine", "source_uri": "https://github.com/jan9103/nine.nu", "git_ref": "VERSION"}
+{
+  "linkin": {
+    "nulibs/nine": {"name": "jan9103/nine", "version": "~0.95"}
+  },
+  "registry": [
+    {"source_uri": "https://github.com/Jan9103/numng_repo", "package_format": "numng", "path_offset": "repo"}
+  ]
 }
 ```
 
-And replace `VERSION` with the **oldest** nushell version you want to support (example: `nu0.96`)
+And replace `0.95` with the **oldest** nushell version you want to support (example: `0.95`)
 
 Afterwards `use` it at the top of each script of your project using relative paths from the script to nine (example: `use ../nulibs/nine *`)
 
