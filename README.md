@@ -24,7 +24,7 @@ Add the following linkin to your projects `numng.json`:
 }
 ```
 
-And replace `0.96` with the **oldest** nushell version you want to support (example: `0.96`)
+And replace `0.96` with the **oldest** nushell version you want to support
 
 Afterwards `use` it at the top of each script of your project using relative paths from the script to nine (example: `use ../nulibs/nine *`)
 
