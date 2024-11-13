@@ -66,11 +66,12 @@ Manually copying the files in might work at first, but you will have to constant
 
 branch-name / from nu-version | up to nu-version | code
 --- | --- | ---
-`nu0.95` | `0.99` | [code](https://github.com/Jan9103/nine/tree/nu0.95)
-`nu0.96` | `0.99` | [code](https://github.com/Jan9103/nine/tree/nu0.96)
-`nu0.97` | `0.99` | [code](https://github.com/Jan9103/nine/tree/nu0.97)
-`nu0.98` | `0.99` | [code](https://github.com/Jan9103/nine/tree/nu0.98)
-`nu0.99` | `0.99` | [code](https://github.com/Jan9103/nine/tree/nu0.99)
+`nu0.95`  | `0.100` | [code](https://github.com/Jan9103/nine/tree/nu0.95)
+`nu0.96`  | `0.100` | [code](https://github.com/Jan9103/nine/tree/nu0.96)
+`nu0.97`  | `0.100` | [code](https://github.com/Jan9103/nine/tree/nu0.97)
+`nu0.98`  | `0.100` | [code](https://github.com/Jan9103/nine/tree/nu0.98)
+`nu0.99`  | `0.100` | [code](https://github.com/Jan9103/nine/tree/nu0.99)
+`nu0.100` | `0.100` | [code](https://github.com/Jan9103/nine/tree/nu0.100)
 
 
 ## FAQ
