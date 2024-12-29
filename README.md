@@ -1,3 +1,29 @@
+# Archival notice
+
+I decided to declare the second attempt at this experiment a failure.  
+Most of the important changes to include here are just to deep to properly implement a wrapper for.  
+To give you an idea of how much is impossible here is the list for `0.100.0` to `0.101.0`:
+* changes to the `++` operator
+* typing is stricter
+* `timeit` no longer supports blocks
+* changes to how `from csv` parses things (yes i could reimplement it in pure nu...)
+* imported modules are named differently
+* removal of `du --all` argument
+* changes to how `source` works
+* removal of `NU_DISABLE_IR`
+
+Yes it would still fix a few things and maybe help one script, but from my POV it is currently
+simply not worth the extra work on both the script and nine side.
+
+I will probably revisit the idea a 3rd time when nushell gets more stable (`1.0`?).
+
+
+---
+
+Original README
+
+---
+
 # Nine.nu
 
 A forward-compatability library for [nu][].
